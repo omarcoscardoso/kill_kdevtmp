@@ -14,7 +14,8 @@ do
 
     # SE O PID EXISTIR REMOVE 
     # OS PROCESSOS MALICIOSOS
-    # CASO CONTRARIO GUARDA NO LOG A EXECUCAO 
+    # CASO CONTRARIO GUARDA NO 
+    # LOG A EXECUCAO 
     if [ -z "$PID" ]; then
         MSG='[!] Nada encontrado'
         echo [$$]_$(date +"%Y-%m-%d_%T") $MSG >> $ARQ_LOG
